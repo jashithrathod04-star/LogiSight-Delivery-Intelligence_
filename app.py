@@ -56,7 +56,7 @@ html, body, [class*="css"] {font-family: Inter, "Segoe UI", Helvetica, Arial, sa
 /* Refresh button: navy background, white text */
 [data-testid="stSidebar"] button {
     color: #FFFFFF !important;
-    background-color: #FFFFFF !important;
+    background-color: #0B1F3A !important;
     border: 1px solid #0B1F3A !important;
 }
 
