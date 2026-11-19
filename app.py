@@ -49,8 +49,8 @@ html, body, [class*="css"] {font-family: Inter, "Segoe UI", Helvetica, Arial, sa
 /* Refresh button text */
 [data-testid="stSidebar"] button {
     color: #FFFFFF !important;
-    background-color: #FFFFFF !important;
-    border: 1px solid #0B1F3A !important;
+    background-color: #0B1F3A !important;
+    border: 1px solid #FFFFFF !important;
 }
 
 [data-testid="stSidebar"] button p {
