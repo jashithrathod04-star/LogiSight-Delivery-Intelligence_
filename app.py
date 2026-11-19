@@ -354,13 +354,13 @@ else:
     st.latex(r"\mu=\frac{1}{n}\sum_{i=1}^{n}t_i \qquad \sigma=\sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(t_i-\mu)^2} \qquad T_{late}=\mu+\sigma")
     st.latex(r"\text{Late \%}=\frac{\#\{t_i>T_{late}\}}{n_{valid}}\times 100 \qquad IQR=Q_3-Q_1")
     st.markdown(f"""
-- **Convention:** the *sample* standard deviation (divide by n − 1) is used everywhere. For this data μ = {fmt(mu_all, 2)} min, σ = {fmt(sd_all, 2)} min, T_late = {fmt(T, 2)} min.
-- **Late threshold:** an order is late when Delivery_Time > μ + σ. This is a statistical threshold defined for this project, **not an official company SLA**. It is computed once on the full cleaned dataset so the definition of "late" stays constant while filters change; KPIs, percentages and charts respond to filters.
-- **Why μ + σ:** if times were roughly normal, about 16% of orders would exceed it, so it flags unusually slow deliveries relative to this dataset.
-- **Age groups:** Below 25 (age < 25), 25–40 (25 ≤ age ≤ 40), Above 40 (age > 40); missing ages are median-imputed first.
-- **Cleaning choices:** median for numeric gaps (robust to outliers), mode for categorical gaps. Delivery_Time is the outcome variable, so rows without a valid value are excluded rather than imputed. Valid ranges: time > 0, rating 0–5, age 1–100.
-- **Interpretation:** all findings are descriptive associations. They do not show that weather, traffic, vehicle or agent characteristics *cause* delays.
-- **Limitations:** imputation can understate variability; groups with few orders give unstable averages (insights need ≥ {ins.MIN_GROUP} orders per group and ≥ {ins.MIN_TOTAL} overall); scatter plots sample 1,500 points for display only; no time or distance variables are available to control for confounding.
+* **Convention:** the *sample* standard deviation (divide by n − 1) is used everywhere. For this data μ = {fmt(mu_all, 2)} min, σ = {fmt(sd_all, 2)} min, T_late = {fmt(T, 2)} min.
+* **Late threshold:** an order is late when Delivery_Time > μ + σ. This is a statistical threshold defined for this project, **not an official company SLA**. It is computed once on the full cleaned dataset so the definition of "late" stays constant while filters change; KPIs, percentages and charts respond to filters.
+* **Why μ + σ:** if times were roughly normal, about 16% of orders would exceed it, so it flags unusually slow deliveries relative to this dataset.
+* **Age groups:** Below 25 (age < 25), 25–40 (25 ≤ age ≤ 40), Above 40 (age > 40); missing ages are median-imputed first.
+* **Cleaning choices:** median for numeric gaps (robust to outliers), mode for categorical gaps. Delivery_Time is the outcome variable, so rows without a valid value are excluded rather than imputed. Valid ranges: time > 0, rating 0–5, age 1–100.
+* **Interpretation:** all findings are descriptive associations. They do not show that weather, traffic, vehicle or agent characteristics *cause* delays.
+* **Limitations:** imputation can understate variability; groups with few orders give unstable averages (insights need ≥ {ins.MIN_GROUP} orders per group and ≥ {ins.MIN_TOTAL} overall); scatter plots sample 1,500 points for display only; no time or distance variables are available to control for confounding.
 """)
     st.markdown("### FA-1 plan → FA-2 implementation")
     table(pd.DataFrame({"FA-1 planned feature": ["Delay Analyzer", "Vehicle Comparison", "Agent Performance Insights", "Regional Bottleneck Finder", "Category Visualizer", "Sidebar filters", "Data logic flow"],
