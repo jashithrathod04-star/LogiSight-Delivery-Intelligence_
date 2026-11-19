@@ -9,7 +9,53 @@ st.markdown("""<style>
 html, body, [class*="css"] {font-family: Inter, "Segoe UI", Helvetica, Arial, sans-serif;}
 #MainMenu, footer {visibility: hidden;}
 .block-container {padding-top: 1.6rem; max-width: 1250px;}
-[data-testid="stSidebar"] {background: #F4F7F9; border-right: 1px solid #E1E7ED;}
+
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background: #F4F7F9;
+    border-right: 1px solid #E1E7ED;
+}
+
+/* Fix sidebar text visibility */
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"],
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] strong,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] label p,
+[data-testid="stSidebar"] label span,
+[data-testid="stSidebar"] .stCaption {
+    color: #263445 !important;
+    opacity: 1 !important;
+}
+
+/* Sidebar section headings */
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] strong {
+    color: #0B1F3A !important;
+    font-weight: 700;
+}
+
+/* Navigation spacing */
+[data-testid="stSidebar"] .stRadio {
+    gap: 8px;
+}
+
+/* Radio option text */
+[data-testid="stSidebar"] .stRadio label {
+    color: #263445 !important;
+    font-weight: 500;
+}
+
+/* Sidebar dividers */
+[data-testid="stSidebar"] hr {
+    border-color: #D5DDE5;
+}
+
+
+
+
+
+
 .brand {font-size: 1.45rem; font-weight: 700; color: #0B1F3A; letter-spacing: -.02em;}
 .brand b {color: #0F9D93;} .tag {color: #6B7A8C; font-size: .78rem; margin-bottom: .8rem;}
 .kpi {background: #fff; border: 1px solid #E1E7ED; border-radius: 14px; padding: 16px 18px; box-shadow: 0 1px 2px rgba(11,31,58,.04); height: 100%;}
