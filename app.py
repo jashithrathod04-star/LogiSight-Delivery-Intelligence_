@@ -56,12 +56,12 @@ html, body, [class*="css"] {font-family: Inter, "Segoe UI", Helvetica, Arial, sa
 
 
 
-/* Refresh button text */
-[data-testid="stSidebar"] button,
-[data-testid="stSidebar"] button p {
+/* Sidebar buttons (Refresh data & Reset all filters) */
+[data-testid="stSidebar"] .stButton button,
+[data-testid="stSidebar"] .stButton button p,
+[data-testid="stSidebar"] .stButton button [data-testid="stMarkdownContainer"] p {
     color: #FFFFFF !important;
 }
-
 
 
 
