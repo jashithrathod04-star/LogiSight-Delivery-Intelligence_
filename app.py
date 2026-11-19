@@ -58,6 +58,12 @@ html, body, [class*="css"] {font-family: Inter, "Segoe UI", Helvetica, Arial, sa
 }
 
 
+[data-testid="stSidebar"] [data-baseweb="select"] svg {
+    fill: #FFFFFF !important;
+    color: #FFFFFF !important;
+}
+
+
 
 /* Sidebar dividers */
 [data-testid="stSidebar"] hr {
