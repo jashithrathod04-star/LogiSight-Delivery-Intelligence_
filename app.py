@@ -53,16 +53,20 @@ html, body, [class*="css"] {font-family: Inter, "Segoe UI", Helvetica, Arial, sa
     font-weight: 500;
 }
 
-/* Refresh button: navy background, white text */
-[data-testid="stSidebar"] button {
-    color: #FFFFFF !important;
-    background-color: #0B1F3A !important;
-    border: 1px solid #0B1F3A !important;
-}
 
+
+
+/* Refresh button text */
+[data-testid="stSidebar"] button,
 [data-testid="stSidebar"] button p {
     color: #FFFFFF !important;
 }
+
+
+
+
+
+
 
 /* Multiselect control surfaces and right-side indicators */
 [data-testid="stSidebar"] [data-baseweb="select"] > div {
