@@ -58,10 +58,34 @@ html, body, [class*="css"] {font-family: Inter, "Segoe UI", Helvetica, Arial, sa
 }
 
 
+/* Multiselect dropdown controls */
+[data-testid="stSidebar"] [data-baseweb="select"] {
+    background-color: #2B2926 !important;
+}
+
+[data-testid="stSidebar"] [data-baseweb="select"] > div {
+    background-color: #2B2926 !important;
+}
+
+[data-testid="stSidebar"] [data-baseweb="select"] input {
+    background: transparent !important;
+    color: #FFFFFF !important;
+}
+
 [data-testid="stSidebar"] [data-baseweb="select"] svg {
     fill: #FFFFFF !important;
     color: #FFFFFF !important;
 }
+
+[data-testid="stSidebar"] [data-baseweb="select"] button {
+    background: transparent !important;
+    color: #FFFFFF !important;
+}
+
+
+
+
+
 
 
 
