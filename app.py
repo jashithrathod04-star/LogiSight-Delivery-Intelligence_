@@ -83,7 +83,20 @@ html, body, [class*="css"] {font-family: Inter, "Segoe UI", Helvetica, Arial, sa
 }
 
 
+/* Fix white multiselect indicator backgrounds */
+[data-testid="stSidebar"] [data-baseweb="select"] [class*="Indicator"] {
+    background-color: #2B2926 !important;
+}
 
+[data-testid="stSidebar"] [data-baseweb="select"] [class*="indicator"] {
+    background-color: #2B2926 !important;
+    color: #FFFFFF !important;
+}
+
+[data-testid="stSidebar"] [data-baseweb="select"] svg {
+    fill: #FFFFFF !important;
+    color: #FFFFFF !important;
+}
 
 
 
