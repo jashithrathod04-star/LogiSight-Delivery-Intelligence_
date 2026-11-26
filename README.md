@@ -13,7 +13,7 @@ The dashboard enables users to investigate delivery delays, compare vehicle perf
 
 **Live Application:** [Open LogiSight Dashboard](https://logisight-delivery-intelligence-rathodjas.streamlit.app/)
 
-**GitHub Repository:** [View Source Code](https://github.com/adityasahani392217/IADAI202-1000414-ADITYA-JITENDRA-KUMAR-SAHANI-FA)
+**GitHub Repository:** [View Source Code](https://github.com/jashithrathod04-star/LogiSight-Delivery-Intelligence_)
 
 ---
 
