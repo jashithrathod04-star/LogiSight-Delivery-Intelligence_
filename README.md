@@ -11,7 +11,7 @@ Developed as part of **Formative Assessment 2 (FA-2) for Mathematics for AI-II**
 
 The dashboard enables users to investigate delivery delays, compare vehicle performance, examine delivery-agent characteristics, identify regional patterns and explore product-category differences through data-driven insights.
 
-**Live Application:** [Open LogiSight Dashboard](https://iadai202-1000414-aditya-jitendra-kumar-sahani-fa.streamlit.app/)
+**Live Application:** [Open LogiSight Dashboard](https://logisight-delivery-intelligence-rathodjas.streamlit.app/)
 
 **GitHub Repository:** [View Source Code](https://github.com/adityasahani392217/IADAI202-1000414-ADITYA-JITENDRA-KUMAR-SAHANI-FA)
 
